@@ -1,7 +1,7 @@
 {
   "name": "hubot-simple-greeting",
   "description": "A simple hubot script that gives your robot some friendly greetings",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "author": "Paul Theurer <paultheurer@gmail.com>",
   "license": "MIT",
 
