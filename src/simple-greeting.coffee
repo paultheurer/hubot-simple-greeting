@@ -1,9 +1,10 @@
 # Description
 #   A simple hubot script that gives your robot some friendly greetings
-#   Pass in `HUBOT_SIMPLE_GREETING_SLACK` (true or false) to have jazzy messages just for Slack!
+#   Pass in `HUBOT_SIMPLE_GREETING_SLACK` (true) to have jazzy messages just for Slack!
 #
 # Configuration:
-#   HUBOT_SIMPLE_GREETING_SLACK - true or false
+#   HUBOT_SIMPLE_GREETING_SLACK
+#   Pass true if using Slack, leave it out otherwise
 #
 # Commands:
 #   hubot howdy|hallo|hey|hi|hello|yo|good day
