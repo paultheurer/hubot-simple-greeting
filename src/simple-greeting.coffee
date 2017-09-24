@@ -1,30 +1,33 @@
 # Description
 #   A simple hubot script that gives your robot some friendly greetings
+#   Pass in `HUBOT_SIMPLE_GREETING_SLACK` (true or false) to have jazzy messages just for Slack!
 #
 # Configuration:
 #   HUBOT_SIMPLE_GREETING_SLACK - true or false
 #
 # Commands:
 #   hubot howdy|hallo|hey|hi|hello|yo|good day
-#   "Well hello there <person>! :grinning:",
+#   "Well hello there <person>! :grinning:"
 #
 # Notes:
-#   <optional notes required for the script>
+#   Update data/greetings.json to add your own custom greeting messages
+#   (If you update these, check the tests too)
 #
 # Author:
 #   Paul Theurer <paultheurer@gmail.com>
 
 module.exports = (robot) ->
   greetings = require('../data/greetings.json');
-  hellos = greetings.hubot.hellos
-  mornings = greetings.hubot.mornings
-  evenings = greetings.hubot.evenings
 
-  # hubot is running on slack, so jazz up those messages a little bit
-  if process.env.HUBOT_SIMPLE_GREETING_SLACK == true
+  # if hubot is running on slack, jazz up those messages a little bit
+  if process.env.HUBOT_SIMPLE_GREETING_SLACK
     hellos = greetings.slack.hellos
     mornings = greetings.slack.mornings
     evenings = greetings.slack.evenings
+  else
+    hellos = greetings.hubot.hellos
+    mornings = greetings.hubot.mornings
+    evenings = greetings.hubot.evenings
 
   robot.respond /(howdy|hallo|hey|hi|hello|yo|good day)/i, (res) ->
     message = res.random hellos
