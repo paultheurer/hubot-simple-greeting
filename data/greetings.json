@@ -1,0 +1,42 @@
+{
+  "slack": {
+    "hellos": [
+      "Well hello there %! :grinning:",
+      "Hey % :smiley_cat:",
+      "Alrighty %! :smirk:",
+      "Lookin' good % :ok_hand:",
+      "Howdy % :simple_smile:"
+    ],
+    "mornings": [
+      "Good morning %! :wave:",
+      "And a good morning to you too %! :sunny:",
+      "Morning %. Time for :coffee:?"
+    ],
+    "evenings": [
+      "Cheerio % - have a fantastical evening! :beers:",
+      "Sleep tight... Don't let them bed bugs bite!",
+      "Night night :sleeping:",
+      "Have a good one %! :raised_hands:"
+    ]
+  },
+  "hubot": {
+    "hellos": [
+      "Well hello there %!",
+      "Hey % :)",
+      "Alrighty %! ;)",
+      "Lookin' good %!",
+      "Howdy %"
+      ],
+    "mornings": [
+      "Good morning %!",
+      "And a good morning to you too %!",
+      "Morning %. Time for coffee?"
+    ],
+    "evenings": [
+      "Cheerio % - have a fantastical evening!",
+      "Sleep tight... Don't let them bed bugs bite!",
+      "Night night... Zzz...",
+      "Have a good one %!"
+    ]
+  }
+}
