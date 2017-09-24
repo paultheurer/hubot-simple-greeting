@@ -1,7 +1,7 @@
 {
   "name": "hubot-simple-greeting",
   "description": "A simple hubot script that gives your robot some friendly greetings",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Paul Theurer <paultheurer@gmail.com>",
   "license": "MIT",
 
@@ -9,11 +9,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-simple-greeting.git"
+    "url": "git://github.com/paultheurer/hubot-simple-greeting"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-simple-greeting/issues"
+    "url": "https://github.com/paultheurer/hubot-simple-greeting"
   },
 
   "dependencies": {
